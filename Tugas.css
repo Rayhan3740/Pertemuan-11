@@ -1,0 +1,98 @@
+header {
+    background-color: rgb(255, 223, 171);
+    text-align: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    animation-name: warna;
+}
+
+img:hover {
+    animation-play-state: running;
+    height: 150px;
+    width: 150px;
+}
+
+.navigation-bar {
+    background-color: rgb(255, 223, 171);
+    padding: 10px;
+}
+
+.navbar {
+    color: black;
+    background-color: rgb(255, 223, 171);
+    margin-left: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px; /* Tambahkan sedikit lekukan */
+}
+
+.navbar:hover {
+    background-color: rgb(247, 247, 247);
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border: 1px dashed black;
+}
+
+.video{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    width: 150px;
+    transition: width 2s, height 4s;
+    border-radius: 25px;
+    box-shadow: 10px, 10px, 10px rgb(255, 255, 255);
+}
+
+.video:hover{
+    animation-direction: reverse;
+    animation-play-state: running;
+    height: 300px;
+    width: 500px;
+}
+
+@keyframes warna{
+    0%{background-color:  rgb(255, 244, 142);}
+    20%{background-color: yellow;}
+    40%{background-color: rgb(255, 229, 114);}
+    60%{background-color: rgb(229, 255, 0);}
+    80%{background-color: rgb(255, 17, 0);}
+    100%{background-color:rgb(255, 187, 0);}
+}
+
+.video{
+    animation-name: warna;
+    animation-play-state: paused;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.button{
+    border: 1px rgb(255, 255, 255);
+    text-align: center;
+    animation-name: berubah;
+    animation-play-state: unset;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+    box-shadow: 2px, 3px, 2px black;
+    height: max-content;
+    font-size: 30px;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    animation-play-state: running;
+}
+
+@keyframes berubah{
+    0%{background-color: rgb(204, 212, 116);}
+    50%{background-color: yellow;}
+    100%{background-color: rgb(241, 255, 214);}
+}
