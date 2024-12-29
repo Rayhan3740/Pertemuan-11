@@ -3,6 +3,14 @@ header {
     text-align: center;
 }
 
+header{
+    animation-name: warna;
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
 img {
     height: 100px;
     width: 100px;
